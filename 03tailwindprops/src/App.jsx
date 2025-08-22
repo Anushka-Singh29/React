@@ -1,25 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Card from '../components/Card'
-
-
+// import { useState } from 'react'
+import "./App.css";
+import Cards from "./components/Cards";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   let myObj = {
-    username:"Anushka",
+    username: "Anushka",
     age: 21
   }
-
-  let myArr = [1,2,3]
+  let newArr = [1,2,3];
 
   return (
     <>
-     <h1 className='bg-blend-color'>Tailwind test</h1>
-       <Card username="Anushka" age={21} someobj={myArr} />
-       <Card />
+      <h1 className="bg-green-400 text-balck p-4 rounded-xl">Hello</h1>
+      <Cards username="Yt" price="3456$"/>
+      <Cards username="Anuhska" price="2754$" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
