@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cards({username, price="Price unavailable"}){
+function Cards({username, price="Price unavailable "}){
     // console.log("props", props);
     console.log(username)
     console.log(price)
